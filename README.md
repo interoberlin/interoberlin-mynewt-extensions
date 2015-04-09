@@ -1,4 +1,4 @@
-# The WunderBar Sensor Modules Firmware Repository
+# The WunderBar Sensor Modules Firmware Repository [![Build Status](https://travis-ci.org/relayr/relayr-firmware-nrf51-modules.svg)](https://travis-ci.org/relayr/relayr-firmware-nrf51-modules)
 
 **DISCLAIMER: Please note that this firmware version is for evaluation only. It is not feature complete, or backwards compatible, has not undergone extensive testing and is likely unstable. If you choose to experiment with it please note that support for it is limited at this stage.** 
 
