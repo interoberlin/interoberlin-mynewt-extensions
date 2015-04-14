@@ -3,7 +3,7 @@
 #include "rtc.h"
 
 #define DEFAULT_SAMPLING_PERIOD 1000UL
-#define MIN SAMPLING_PERIOD 250UL
+#define MIN_SAMPLING_PERIOD 250UL
 
 #define NOTIF_TIMER_ID  0
 
@@ -48,7 +48,8 @@ my_one_shot_timer_cb(struct rtc_ctx *ctx)
 }
 
 static void
-my_char_data_write_cb(struct service_desc *s, struct char_desc *c, const void *val, const uint16_t len)
+my_char_data_write_cb(struct service_desc *s, struct char_desc *c, const void *val,
+        const uint16_t len, const uint16_t offset)
 {
 	struct my_service_ctx *ctx = (struct my_service_ctx *)s;
 	ctx->my_sensor_value = *(uint8_t*)val;
@@ -64,7 +65,7 @@ sampling_period_read_cb(struct service_desc *s, struct char_desc *c, void **valp
 
 static void
 sampling_period_write_cb(struct service_desc *s, struct char_desc *c,
-        const void *val, const uint16_t len)
+        const void *val, const uint16_t len, const uint16_t offset)
 {
 	struct my_service_ctx *ctx = (struct my_service_ctx *)s;
 	ctx->sampling_period = *(uint32_t*)val;

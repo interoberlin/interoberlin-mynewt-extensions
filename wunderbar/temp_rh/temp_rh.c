@@ -83,7 +83,7 @@ rh_sampling_period_read_cb(struct service_desc *s, struct char_desc *c, void **v
 
 static void
 rh_sampling_period_write_cb(struct service_desc *s, struct char_desc *c,
-        const void *val, const uint16_t len)
+        const void *val, const uint16_t len, const uint16_t offset)
 {
 	struct rh_ctx *ctx = (struct rh_ctx *)s;
 	if (*(uint32_t*)val > MIN_SAMPLING_PERIOD)
@@ -184,7 +184,7 @@ temp_sampling_period_read_cb(struct service_desc *s, struct char_desc *c, void *
 
 static void
 temp_sampling_period_write_cb(struct service_desc *s, struct char_desc *c,
-        const void *val, const uint16_t len)
+        const void *val, const uint16_t len, const uint16_t offset)
 {
 	struct temp_ctx *ctx = (struct temp_ctx *)s;
 	if (*(uint32_t*)val > MIN_SAMPLING_PERIOD)

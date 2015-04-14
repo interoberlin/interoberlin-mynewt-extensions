@@ -58,7 +58,7 @@ mpu6500_init(void)
                 mpu6500_read_register(MPU6500_PWR_MGMT_1, val, sizeof(val));
         }
         //Otherwise, int pin drains 300µa
-        mpu6500_write_register(MPU6500_INT_PIN_CFG, 0x80, 1);
+        mpu6500_write_register(MPU6500_INT_PIN_CFG, val, sizeof(val));
 }
 
 void

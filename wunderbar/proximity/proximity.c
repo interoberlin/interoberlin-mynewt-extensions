@@ -79,7 +79,7 @@ proximity_sampling_period_read_cb(struct service_desc *s, struct char_desc *c, v
 
 static void
 proximity_sampling_period_write_cb(struct service_desc *s, struct char_desc *c,
-        const void *val, const uint16_t len)
+        const void *val, const uint16_t len, const uint16_t offset)
 {
 	struct proximity_ctx *ctx = (struct proximity_ctx *)s;
         if (*(uint32_t*)val > MIN_SAMPLING_PERIOD)
@@ -177,7 +177,7 @@ rgb_sampling_period_read_cb(struct service_desc *s, struct char_desc *c, void **
 
 static void
 rgb_sampling_period_write_cb(struct service_desc *s, struct char_desc *c,
-        const void *val, const uint16_t len)
+        const void *val, const uint16_t len, const uint16_t offset)
 {
 	struct rgb_ctx *ctx = (struct rgb_ctx *)s;
         if (*(uint32_t*)val > MIN_SAMPLING_PERIOD)

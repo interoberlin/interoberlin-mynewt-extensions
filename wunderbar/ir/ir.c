@@ -54,7 +54,8 @@ static struct ir_ctx ir_ctx;
 static struct rtc_ctx rtc_ctx;
 
 static void
-ir_write_cb(struct service_desc *s, struct char_desc *c, const void *val, const uint16_t len)
+ir_write_cb(struct service_desc *s, struct char_desc *c, const void *val,
+	const uint16_t len, const uint16_t offset)
 {
 	struct ir_payload *payload = (struct ir_payload*) val;
 	nrf_delay_us(50 * 999); // XXX delay ~50ms to avoid interrupt screw up

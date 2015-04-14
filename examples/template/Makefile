@@ -1,7 +1,7 @@
 PROG= template
 SRCS= template.c
 
-CFLAGS+= -I.
+CFLAGS+= -I$(abspath ../../config) -I.
 CFLAGS+= -fdiagnostics-color
 
 include ../../build.mk
