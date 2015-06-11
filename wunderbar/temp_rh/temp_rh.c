@@ -60,7 +60,6 @@ static void
 rh_disconnected(struct service_desc *s)
 {
 	rtc_update_cfg(rh_ctx.sampling_period, (uint8_t)NOTIF_TIMER_ID, false);
-	rtc_update_cfg(temp_ctx.sampling_period, (uint8_t)NOTIF_TIMER_ID+1, false);
 }
 
 static void
@@ -162,7 +161,7 @@ temp_connected(struct service_desc *s)
 static void
 temp_disconnected(struct service_desc *s)
 {
-	rtc_update_cfg(temp_ctx.sampling_period, (uint8_t)NOTIF_TIMER_ID, false);}
+	rtc_update_cfg(temp_ctx.sampling_period, (uint8_t)NOTIF_TIMER_ID+1, false);}
 
 static void
 temp_read_cb(struct service_desc *s, struct char_desc *c, void **val, uint16_t *len)
