@@ -33,7 +33,32 @@ The connector should be soldered to the board in the following manner:
 and 
 	`git submodule update`
 
-3. Download the [nRF SDK](https://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF51822) and extract it into ```nrf51-sdk```.
+3. Follow the install instructions for [```nrf51-sdk```](https://github.com/relayr/nrf51-sdk).
 4. Navigate to the folder of the sensor you wish to flash (e.g. ```cd wunderbar/temp_rh```).
 5. Flash the application by typing `make flash`.
 6. [OPTIONAL] You might need to flash the softdevice. Download the S110 softdevice **v7** from Nordic, unpack the S110 hex file into your application folder and type ```make flash-all```.
+
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2015 relayr (iThings4U GmbH)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
