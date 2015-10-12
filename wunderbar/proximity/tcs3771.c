@@ -98,7 +98,7 @@ tcs3771_init(void)
                 0x130,          /* lower limit */
                 0x170           /* high limit */
         };
-        tcs3771_write_register(TCS3771_AILT, data6, sizeof(data4));
+        tcs3771_write_register(TCS3771_AILT, data6, sizeof(data6));
 
         uint8_t data5[] = {
                 TCS3771_PERS_PPERS(10)
