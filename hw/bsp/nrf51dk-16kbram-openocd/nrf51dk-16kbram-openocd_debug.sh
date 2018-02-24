@@ -37,7 +37,7 @@
 . $CORE_PATH/hw/scripts/openocd.sh
 
 FILE_NAME=$BIN_BASENAME.elf
-CFG="-f repos/apache-mynewt-core/hw/bsp/nrf51dk-16kbram-openocd/openocd_nrf51.cfg"
+CFG="-f repos/interoberlin-mynewt-extensions/hw/bsp/nrf51dk-16kbram-openocd/openocd_nrf51.cfg"
 # Exit openocd when gdb detaches.
 EXTRA_JTAG_CMD="$EXTRA_JTAG_CMD; nrf51.cpu configure -event gdb-detach {if {[nrf51.cpu curstate] eq \"halted\"} resume;shutdown}"
 
