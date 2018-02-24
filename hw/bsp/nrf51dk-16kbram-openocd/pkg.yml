@@ -80,14 +80,14 @@ pkg.cflags:
     - '-DWDT_ENABLED=1'
 
 pkg.deps:
-    - hw/mcu/nordic/nrf51xxx
-    - libc/baselibc
+    - "@apache-mynewt-core/hw/mcu/nordic/nrf51xxx"
+    - "@apache-mynewt-core/libc/baselibc"
 
 pkg.deps.BLE_DEVICE:
-    - hw/drivers/nimble/nrf51
+    - "@apache-mynewt-core/hw/drivers/nimble/nrf51"
 
 pkg.deps.UART_0:
-    - hw/drivers/uart/uart_hal
+    - "@apache-mynewt-core/hw/drivers/uart/uart_hal"
 
 pkg.deps.UART_1:
-    - hw/drivers/uart/uart_bitbang
+    - "@apache-mynewt-core/hw/drivers/uart/uart_bitbang"
