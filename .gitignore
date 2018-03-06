@@ -1,0 +1,14 @@
+# Binaries
+*.o
+*.obj
+*.a
+*.so
+*.elf
+*.bin
+
+# Eclipse
+.project
+.cproject
+.settings
+.metadata
+
