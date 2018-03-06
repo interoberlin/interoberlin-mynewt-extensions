@@ -1,0 +1,6 @@
+
+enum {
+        RELAYR_UUID_UART_RX_CHAR = 0x2370,
+        RELAYR_UUID_UART_TX_CHAR = 0x2371,
+        RELAYR_UUID_UART_CONFIG_BAUD = 0x2372,
+};

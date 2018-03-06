@@ -4,13 +4,13 @@
 #include <twi_master.h>
 #include <nrf_delay.h>
 
+#include "../../../hw/drivers/sensors/wunderbar/tdk-mpu6500/mpu6500.h"
 #include "simble.h"
 #include "indicator.h"
 #include "batt_serv.h"
 #include "i2c.h"
 #include "rtc.h"
 
-#include "mpu6500.h"
 
 #define DEFAULT_SAMPLING_PERIOD 1000UL
 #define MIN_SAMPLING_PERIOD 250UL
