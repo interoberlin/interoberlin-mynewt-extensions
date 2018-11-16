@@ -1,3 +1,4 @@
 repo.name: interoberlin-mynewt-extensions
 repo.versions:
-     "1-latest": "master"       # master
+     "0.0.0": "develop"
+     "0-latest": "0.0.0"
